@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block noheader %}{% endblock %}
+
+{% block meta_title %}{% trans "Home" %}{% endblock %}
+{#{% block title %}{% trans "Home" %}{% endblock %}#}
+
+{#{% block breadcrumb_menu %}#}
+{#<li class="active">{% trans "Home" %}</li>#}
+{#{% endblock %}#}
+
+{#{% block main %}#}
+{#{% blocktrans %}#}
+{#<div id="index_container">#}
+{#    <h2 id="index_header">hello</h2>#}
+{#    <p id="index_text">#}
+{#        My name is <span class="highlight">Eddie</span>. <br>#}
+{#        I am a <span class="highlight">software engineer</span>, <span class="highlight">web developer</span>, <span class="highlight">photographer</span>, and <span class="highlight">friend</span>. <br>#}
+{#        I make great <span class="highlight">ideas</span> come to life.#}
+{#    </p>#}
+{#</div>#}
+{#{% endblocktrans %}#}
+{#{% endblock %}#}
+
+{% block main %}
+{% blocktrans %}
+<div id="index_container">
+    <h2 id="index_header">ed·die·hsu</h2>
+    <br>
+    <span class="dict-pronounce">/ed-ee-soo/</span>
+    <br>
+    <p><i>noun</i></p>
+    <div class="dict-entry">
+        22 year old male, born and raised in New York. Addicted to exploration and adrenaline, and stricken with a
+        severe case of wanderlust. Lover of computers, cameras, golden retrievers, witty humor, EDM, and roller coasters.
+        On a quest to find the best coffee shop in the world.
+        <br>
+        <div style="padding-top:10px; color:#888888;"><i>synonyms:</i> Computer Engineer, Software Developer, Webmaster, Photographer, Adventurer, Dreamer, Friend</div>
+        <div style="padding-top:10px; color:#888888;">"Have you seen Eddie Hsu's <a href="#">latest project</a>?"</div>
+    </div>
+</div>
+{% endblocktrans %}
+{% endblock %}
