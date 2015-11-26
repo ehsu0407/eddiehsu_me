@@ -1,0 +1,25 @@
+{% extends "pages/page.html" %}
+
+{% load mezzanine_tags %}
+
+{% block title %}
+<div class="page-header-custom">
+    <div class="dict-title">con·tact</div>
+    <div class="dict-pronounce">/ˈkänˌtakt/</div>
+    <div class="dict-type-text"><i>noun</i></div>
+    <div class="dict-entry">
+        Communicate with me.
+        <br>
+        <div class="dict-syn-text"><i>Synonyms:</i> Get in touch with, Communicate</div>
+        <div class="dict-syn-text">"There are many ways to contact me."</div>
+    </div>
+</div>
+{% endblock %}
+
+{% block main %}{{ block.super }}
+
+{% editable page.richtextpage.content %}
+{{ page.richtextpage.content|richtext_filters|safe }}
+{% endeditable %}
+
+{% endblock %}

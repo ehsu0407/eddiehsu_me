@@ -1,0 +1,25 @@
+{% extends "pages/page.html" %}
+
+{% load mezzanine_tags %}
+
+{% block title %}
+<div class="page-header-custom">
+    <div class="dict-title">port·fo·li·o</div>
+    <div class="dict-pronounce">/pôrtˈfōlēˌō/</div>
+    <div class="dict-type-text"><i>noun</i></div>
+    <div class="dict-entry">
+        A collection of my most interesting works.
+        <br>
+        <div class="dict-syn-text"><i>Synonyms:</i> Projects, Works</div>
+        <div class="dict-syn-text">"Look through my portfolio to get a glimpse into what I have done."</div>
+    </div>
+</div>
+{% endblock %}
+
+{% block main %}{{ block.super }}
+
+{% editable page.richtextpage.content %}
+{{ page.richtextpage.content|richtext_filters|safe }}
+{% endeditable %}
+
+{% endblock %}

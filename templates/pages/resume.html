@@ -1,0 +1,27 @@
+{% extends "pages/page.html" %}
+
+{% load mezzanine_tags %}
+
+{% block title %}
+<div class="page-header-custom">
+    <div class="dict-title">ré·su·mé</div>
+    <div class="dict-pronounce">/ˈrezəˌmā/</div>
+    <div class="dict-type-text"><i>noun</i></div>
+    <div class="dict-entry">
+        My life's work on a single 8.5' x 11' piece of paper.
+        <br>
+        <div class="dict-syn-text"><i>Synonyms: curriculum vitae, CV</i></div>
+        <div class="dict-syn-text">"Take a look at my resume and see what I am capable of."</div>
+    </div>
+</div>
+{% endblock %}
+
+{% block main %}{{ block.super }}
+
+<iframe src="https://onedrive.live.com/embed?cid=BB1D4060EE81D9FC&resid=BB1D4060EE81D9FC%213474&authkey=ADbWu25AoUcZsq4&em=2" width="100%" height="1240px" frameborder="0" scrolling="no"></iframe>
+
+{#{% editable page.richtextpage.content %}#}
+{#{{ page.richtextpage.content|richtext_filters|safe }}#}
+{#{% endeditable %}#}
+
+{% endblock %}

@@ -1,0 +1,109 @@
+{% extends "pages/page.html" %}
+
+{% load mezzanine_tags staticfiles %}
+
+{% block title %}
+<div class="page-header-custom">
+    <div class="dict-title">a·bout</div>
+    <div class="dict-pronounce">/əˈbout/</div>
+    <div class="dict-type-text"><i>preposition</i></div>
+    <div class="dict-entry">
+        Interesting tidbits about myself.
+        <br>
+        <div class="dict-syn-text"><i>Synonyms:</i> Who am I</div>
+        <div class="dict-syn-text">"What is this person about?"</div>
+    </div>
+</div>
+{% endblock %}
+
+{% block main %}{{ block.super }}
+
+<div class="about-section">
+    <div class="row">
+        <div class="col-md-7">
+            <div class="about-section-table-wrap">
+                <div class="about-section-table-cell">
+                    <div class="about-section-title"><span class="highlight">hello</span>, i'm eddie</div>
+                    <p>i am a 22 year old software engineer, web developer, photographer, creative, and son</p>
+                    <p>i enjoy taking complex problems and puzzles, and developing creative solutions to them.</p>
+                    <p>i'm constantly improving my skills, and there's always more to learn.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="about-section-table-wrap">
+                <div class="about-section-table-cell">
+                    <div class="tilt-left" style="text-align: center;">
+                        <img class="about-image" src="{% static "img/about/me.jpg" %}">
+                        <figcaption class="about-image-caption">this is <span class="highlight">me</span>!</figcaption>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="about-section">
+    <div class="row">
+        <div class="col-md-7 col-md-push-5">
+            <div class="about-section-table-wrap">
+                <div class="about-section-table-cell text-align-right">
+                    <div class="about-section-title">where i'm <span class="highlight">from</span></div>
+                    <p>born in queens, new york, i spent the first eighteen years of my life living on long island.</p>
+                    <p>after that i attended college at the university of illinois - urbana champaign. i graduated in
+                        2015 with a bachelors of science in computer engineering</p>
+                    <p>i'm currently located in chicago illinois.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+            <div class="about-section-table-wrap">
+                <div class="about-section-table-cell">
+                    <div class="tilt-right" style="text-align: center;">
+                        <img class="about-image" src="{% static "img/about/chicago.jpg" %}">
+                        <figcaption class="about-image-caption">where i <span class="highlight">live</span></figcaption>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="about-section">
+    <div class="row">
+        <div class="col-md-7">
+            <div class="about-section-table-wrap">
+                <div class="about-section-table-cell">
+                    <div class="about-section-title">what i <span class="highlight">do</span></div>
+                    <p>if i'm not writing lines of code, i enjoy playing games, taking pictures, working out, and
+                        watching netflix</p>
+                    <p>i really like to explore new places, whether it be a new coffee shop i haven't tried before,
+                        or a hidden vista on the roof of that shop.</p>
+                    <p>i want to travel the world someday</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="about-section-table-wrap">
+                <div class="about-section-table-cell">
+                    <div class="tilt-left" style="text-align: center;">
+                        <img class="about-image" src="{% static "img/about/nex6.jpg" %}">
+                        <figcaption class="about-image-caption">my <span class="highlight">shooter</span> of choice</figcaption>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12 about-bottom-text">
+        I make great <span class="highlight">ideas</span> come to life.
+    </div>
+</div>
+
+{#{% editable page.richtextpage.content %}#}
+{#{{ page.richtextpage.content|richtext_filters|safe }}#}
+{#{% endeditable %}#}
+
+{% endblock %}
